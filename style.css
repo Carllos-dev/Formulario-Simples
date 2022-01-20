@@ -1,0 +1,272 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: thick double black;
+    padding: 0px 0px 40px 40px;
+    background-color:aquamarine;
+}
+
+h1 {
+    text-align: center;
+    border: 3px solid black;
+    background-color: white;
+    border-color:darkred;
+    width: 35%;
+    margin-left: 32%;
+}
+
+form {
+    position: relative;
+    margin: 140px 10px 85px 10px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Compl {
+    position: relative;
+    bottom: 100px;
+}
+
+.Compl2 {
+    margin: 0px 0px 0px 05px;
+    padding: 0 auto;
+    width: 47.5%;
+    height: 20px;
+} 
+.T1 {
+    position: relative;
+    bottom: 90px
+}
+.T1 label > input {
+    cursor: pointer;
+    font-size: 15px;
+    visibility: visible;
+    width: 2%;
+    height: 1.2em;
+}
+
+.C1 {
+    position: relative;
+    bottom: 80px;
+}
+.C11 {
+    position: relative;
+    height: 20px;
+}
+.D1 {
+     position: relative;
+     bottom: 70px;
+     margin: 0px 5px 0px 0px;
+}
+.D11 {
+    position: relative;
+    padding: 3px 0px 3px 5px;
+}
+.S1 {
+    position: relative;
+    bottom: 70px;
+    left: 10px
+}
+
+.S1 label > input {
+    cursor: pointer;
+    font-size: 15px;
+    visibility: visible;
+    border: 0px;
+    width: 2%;
+    height: 1.2em;
+}
+.E1 {
+    position: relative;
+    bottom: 60px;
+}
+.E2 {
+    position: relative;
+    width: 30.9%;
+    height: 20px;
+}
+.N1 {
+    position: relative;
+    bottom: 60px;
+    left: 14px;
+}
+.N11 {
+    position: relative;
+    height: 20px;
+}
+.C2 {
+    position: relative;
+    bottom: 50px;
+    left: 0px;
+}
+.C3 {
+    position: relative;
+    width: 18.6%;
+    height: 20px;
+}
+.UF1 {
+    position: relative;
+    bottom: 50px;
+    left: 5px;
+}
+.UF11 {
+    position: relative;
+    width: 100px;
+    height: 25px;
+}
+
+.Cep1 {
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+}
+.Cep11 {
+    position: relative;
+    width: 18%;
+    height: 20px;
+    left: 10px;
+}
+
+.Tel1 {
+    position: relative;
+    bottom: 40px;
+    left: 0px;
+}
+.Tel2 {
+    position: relative;
+    width: 22.9%;
+    height: 20px;
+}
+.Cel1 {
+    position: relative;
+    bottom: 40px;
+    left: 11px;
+}
+.Cel2 {
+    position: relative;
+    width: 22.3%;
+    height: 20px;
+}
+
+.Em0 {
+    position: relative;
+    width: 20%;
+    height: 20px;
+}
+.Em1 {
+    position: relative;
+    width: 19.8%;
+    height: 20px;
+}
+
+.Em00 {
+    position: relative;
+    bottom: 29px;
+}
+.Em11 {
+    position: relative;
+    bottom: 29px;
+}
+
+.Se0 {
+    position: relative;
+    width: 20.4%;
+    height: 20px;
+}
+.Se1 {
+    position: relative;
+    width: 20.3%;
+    height: 20px;
+}
+.Se00 {
+    position: relative;
+    bottom: 20px;
+}
+.Se11 {
+    position: relative;
+    bottom: 20px;
+}
+.Termos1 {
+    position: relative;
+    bottom: 90px;
+    margin-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.Termos1 input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.Termos1 label {
+    position: relative;
+    padding-left: 2.2em;
+    display: inline-block;
+}
+.Termos1 label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.5em;
+    width: 1.5em;
+    background: #FFF;
+    margin-right: 0.5em;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+.Termos1 label::after {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 0.75em;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+    color: #FFF;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+.Termos1 label:focus::before, .checkbox label:hover::before {
+    background: #DDD;
+}
+.Termos1 input:checked + label::before {
+    background: blue;
+    border-color: blue;
+}
+.Termos1 input:checked + label::after {
+    opacity: 1;
+}
+
+#Enviar1 {
+    font-size: 20px;
+    position: absolute;
+    top: 87%;
+    left: 47%; 
+    border-color: #3498db;
+    color: black;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+#Enviar1:hover {  
+    font-size: 20px;
+    position: absolute;
+    top: 87%;
+    left: 47%; 
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px rgb(12, 248, 12);
+}
+
+img {
+    position: absolute;
+    width: 20%;
+    left: 72%;
+    top: 150px;
+}

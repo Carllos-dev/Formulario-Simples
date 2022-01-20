@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--criando titulo para o formulario-->
+    <h1>Formulário de Cadastro</h1><br>
+    <form action="#" method="post">
+    
+        <label class="Compl">Nome Completo: <input class="Compl2" type="text" name="nome_completo"></label><br>
+        <label class="T1">Tipo:  
+            <label> <input type="radio" name="tipo_pessoa" value="Fisica"> Pessoa Física </label>
+            <label> <input type="radio" name="tipo_pessoa" value="Juridica"> Pessoa Jurídica </label>
+        </label><br>
+        <label class="C1"> CPF/CNPJ: <input class="C11" type="text" name="cpf"> </label><br>
+        <label class="D1"> Data de nascimento: <input class="D11" type="date" name="data_nascimento"> </label>
+        <label class="S1"> Sexo: 
+            <label> <input type="radio" name="sexo" value="Masculino"> Masculino </label>
+            <label> <input type="radio" name="sexo" value="Feminino"> Feminino </label>            
+        </label><br>
+        <label class="E1"> Endereço: <input class="E2" type="text" name="casa"></label>
+        <label class="N1"> Número: <input class="N11" type="text" name="N"></label><br>
+        <label class="C2"> Cidade: <input class="C3" type="text" name="Cid_"></label>
+        <label class="UF1"> UF: 
+            <select class="UF11" type="text" name="Estado">
+                <option value="PE" selected>Pernambuco</option>
+                <option value="BA">Bahia</option>
+                <option value="PB">Paraíba</option>
+                <option value="CE">Ceará</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="SE">Sergipe</option>
+                <option value="MA">Maranhão</option>
+                <option value="PI">Piauí</option>
+                <option value="TO">Tocatins</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="AC">Acre</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="PR">Paraná</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="AM">Amazonas</option>
+                <option value="AP">Amapá</option>
+                <option value="PA">Pará</option>
+                <option value="AL">Alagoas</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>                
+            </select>        
+        </label>
+        <label class="Cep1"> CEP: <input class="Cep11" type="text" name="CEP_"></label><br>
+        <label class="Tel1"> Telefone: <input class="Tel2" type="text" name="Tel_"></label>
+        <label class="Cel1"> Celular: <input class="Cel2" type="text" name="Cel_"></label><br>
+        <label class="Em00"> E-mail: <input class="Em0" type="text" name="Email_"></label>
+        <label class="Em11"> Confirme o e-mail: <input class="Em1" type="text" name="Email_confirm"></label><br>
+        <label class="Se00"> Senha: <input class="Se0" type="password" name="Senha_"></label>
+        <label class="Se11"> Confirme a senha: <input class="Se1" type="password" name="Senha_confirm"></label><br>
+    
+    </form>
+    <img src="imagem.jpg">
+    
+    <div class="Termos1"> 
+        <input type="checkbox" id="Term1" class="Term02" name="Term03"> 
+        <label for="Term1">
+            Li e concordo com os termos
+        </label><br>       
+    </div>
+    <input id="Enviar1" type="button" value="Enviar" onclick="Alerta()"/>
+
+    <script type="text/javascript">
+        function Alerta(){
+            alert('Seus dados foram enviados!');
+        }
+    </script>
+</body>
+</html>
